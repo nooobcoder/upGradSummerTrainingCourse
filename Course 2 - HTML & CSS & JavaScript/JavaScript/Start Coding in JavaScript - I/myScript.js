@@ -1,2 +1,3 @@
 console.log("C:\\Program Files\\nodejs".length);
-console.log
+
+console.log(typeof console)
