@@ -4,10 +4,6 @@
 	justify-content: space-between;
 }
 
-header {
-	cursor: pointer;
-}
-
 .menu-block {
 	width: 20%;
 	cursor: pointer;
@@ -65,15 +61,4 @@ input {
 .board-block {
 	margin-top: 3%;
 	display: none;
-}
-
-body {
-	font-family: sans-serif;
-	margin: 0;
-}
-
-header {
-	padding: 1%;
-	background-color: #186ca3;
-	color: white;
 }

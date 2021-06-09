@@ -11,33 +11,44 @@
 			media="screen"
 			href="../styles/home.css"
 		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			media="screen"
+			href="../styles/commons.css"
+		/>
 	</head>
 	<body>
 		<header>
 			<span onclick="toggleMenu()">&#9776;</span>
-			Project Management App
+			Project Management App (tutorial)
 		</header>
 		<div class="container">
 			<div class="menu-block">
-				Menu
 				<ul id="menuList"></ul>
 			</div>
 			<div class="board-container">
 				<div class="add-board-block">
 					<input
+						id="newBoardText"
 						type="text"
-						value=""
+						value
 						placeholder="eg., New board name"
 						style="width: 80%"
 					/>
-					<button id="add-board-btn" onclick="addBoardAPI()">Add Board</button>
+					<button
+						id="add-board-btn"
+						onclick="addBoardAPI(newBoardText)"
+					>
+						Add Board
+					</button>
 				</div>
 				<div id="boardBlockList">
-					<section>
+					<!-- <section class="board-block" id="board_1">
 						<div>Board Name</div>
 						<button onclick="removeCards()">Remove Card</button>
-						<div class="project-block" id="project-list"></div>
-					</section>
+						<div class="project-block" id="projectList_1"></div>
+					</section> -->
 				</div>
 			</div>
 		</div>

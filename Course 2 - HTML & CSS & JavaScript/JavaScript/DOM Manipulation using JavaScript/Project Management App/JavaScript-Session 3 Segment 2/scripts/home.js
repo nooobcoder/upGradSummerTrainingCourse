@@ -1,6 +1,7 @@
 const toggleMenu = () => {
 	const toggleMenu = document.getElementsByClassName("menu-block")[0];
-	toggleMenu.style.display = toggleMenu.style.display === "none" ? "" : "none";
+	toggleMenu.style.display =
+		toggleMenu.style.display === "none" ? "" : "none";
 	return;
 };
 
@@ -11,8 +12,8 @@ var projectList = [
 	{ name: "Project JavaScript" },
 ];
 
-const showProjectCards = () => {
-	const projectCards = document.getElementById("project-list");
+const showProjectCards = (listId) => {
+	const projectCards = document.getElementById(listId);
 	let htmlContent = "";
 	for (const list of projectList) {
 		let tasks = "";
@@ -23,7 +24,7 @@ const showProjectCards = () => {
 			}
 			tasks.concat(`</ul>`);
 		}
-		htmlContent += `<div class="project-card">${list.name}${tasks}</div>`;
+		htmlContent += `<div class="project-card" id=${listId}>${list.name}${tasks}</div>`;
 	}
 	/* const myVar = projectCards.innerHTML.toString()
 		.concat(`<div class="project-card">
@@ -35,20 +36,36 @@ const showProjectCards = () => {
 						</div>`); */
 	projectCards.innerHTML = htmlContent;
 };
-showProjectCards();
+// showProjectCards(`projectList_1`);
 
-const removeCards = () => {
-	console.log("remove");
-	document.getElementById("project-list").innerHTML = "";
+const removeCards = (param) => {
+	document.getElementById(param[0].id).innerHTML = "";
 };
 
-const addBoardAPI = () => {
-	const templateBlock = `<section>
-					<div>Board Name</div>
-					<button onclick="removeCards()">Remove Card</button>
-					<div class="project-block"></div>
+const loadMenu = (boardId) => {
+	document.getElementById(boardId.id).style.display =
+		document.getElementById(boardId.id).style.display === "none"
+			? "block"
+			: "none";
+};
+
+var idName = 1;
+const addBoardAPI = ({ value: boardName }) => {
+	if (boardName.trim().length >= 1) {
+		idName++;
+		const boardId = `board_${idName}`;
+		const templateBlock = `<section class="board-block" id="${boardId}">
+					<div>${boardName}</div>
+					<button onclick="removeCards(projectList_${idName})">Remove Card</button>
+					<div class="project-block" id="projectList_${idName}"></div>
 				</section>`;
 
-	const parentBoard = document.getElementById("boardBlockList");
-	parentBoard.innerHTML = templateBlock + parentBoard.innerHTML;
+		const parentBoard = document.getElementById("boardBlockList");
+		parentBoard.innerHTML = templateBlock + parentBoard.innerHTML;
+		showProjectCards(`projectList_${idName}`);
+	}
+
+	document.getElementById(
+		"menuList"
+	).innerHTML += `<li onclick="loadMenu(board_${idName})">${boardName}</li>`;
 };
