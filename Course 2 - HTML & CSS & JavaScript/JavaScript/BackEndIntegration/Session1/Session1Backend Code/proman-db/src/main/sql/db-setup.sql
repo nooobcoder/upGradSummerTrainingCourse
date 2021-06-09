@@ -8,8 +8,8 @@
 -- # Step 1 - Drop the existing schema and reassign permissions
 
 DROP SCHEMA IF EXISTS proman CASCADE;
-CREATE SCHEMA proman AUTHORIZATION postgres;
-GRANT ALL PRIVILEGES ON SCHEMA proman TO postgres;
+CREATE SCHEMA proman AUTHORIZATION ankurpaul;
+GRANT ALL PRIVILEGES ON SCHEMA proman TO ankurpaul;
 COMMIT;
 
 -- ********** End of setup **********
