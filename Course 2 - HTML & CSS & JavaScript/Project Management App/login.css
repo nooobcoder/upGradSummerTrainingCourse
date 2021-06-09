@@ -1,0 +1,48 @@
+body {
+	display: flex;
+	margin: 8px;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	font-family: sans-serif;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+	color: #00578a;
+	text-decoration: none;
+}
+
+form {
+	display: flex;
+	width: 40%;
+	flex-direction: column;
+}
+
+span {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+input {
+	padding: 2%;
+	margin-bottom: 10px;
+}
+
+label {
+	font-size: 20px;
+	font-weight: bolder;
+	margin: 10px 0px 10px 0px;
+}
+.submit_btn {
+	background-color: #11741b;
+	padding: 2%;
+	margin-top: 10px;
+	color: #fff;
+	font-size: 22px;
+	border: 0;
+	cursor: pointer;
+}

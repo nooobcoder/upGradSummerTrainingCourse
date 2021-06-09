@@ -1,0 +1,6 @@
+Instructions-
+1)You have to create an image such that when you click on it, you go to another page. Take the address of the image to be https://d1qb2nb5cznatu.cloudfront.net/startups/i/667004-9d38516263d36e73338d042efaa00885-medium_jpg.jpg?buster=1440595837 and the address of the next page to be
+ 
+https://www.upgrad.com/
+
+2)Give the image an inline style, with a height of 200px and width of 200px.
