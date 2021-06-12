@@ -1,0 +1,15 @@
+<head>
+	<script src="index.js"></script>
+	<link rel="stylesheet" href="index.css" />
+	<title>Open Air Quality Org</title>
+</head>
+<body>
+	<div id="container">
+		<h1>Open Air Quality Data</h1>
+		<form id="country-form">
+			<p class="labelText">Enter Country Code</p>
+			<input type="text" placeholder="eg. IN for India" id="country" />
+		</form>
+		<button id="submit" onclick="getCities(country)">Submit</button>
+	</div>
+</body>

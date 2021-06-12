@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Securing AJAX</title>
+		<link rel="stylesheet" href="./index.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1 style="text-align: center">Log in</h1>
+			<form id="login-form" name="LoginForm">
+				<label for="username" class="label-text">Email</label>
+				<input
+					type="text"
+					id="email"
+					placeholder="e.g., test@test.com"
+					required
+				/>
+				<label for="password" class="label-text">Password</label>
+				<input
+					type="password"
+					id="password"
+					placeholder="e.g., **********"
+					required
+				/>
+			</form>
+			<button
+				type="submit"
+				class="login-btn"
+				onclick="handleSubmit(email,password)"
+			>
+				Login
+			</button>
+		</div>
+		<script src="./index.js"></script>
+	</body>
+</html>

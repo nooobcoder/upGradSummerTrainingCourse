@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div id="container">
+			<h2>Access Token</h2>
+			<form id="form-container">
+				<label for="username">Name:</label><br />
+				<input id="username" type="text" placeholder="Enter your username" />
+				<br /><br />
+				<label for="password">Password:</label><br />
+				<input
+					id="password"
+					type="password"
+					placeholder="Enter your password"
+				/>
+			</form>
+			<button
+				id="submit-button"
+				onclick="generateAccessToken(username,password)"
+			>
+				Generate Access Token
+			</button>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>

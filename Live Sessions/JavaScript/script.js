@@ -34,3 +34,12 @@ for (var c = 1; c <= 1000; ++c) {
 
 /* var a = {};
 console.log(typeof a); */
+
+const parent = () => {
+	console.log("Hi! I am the parent.");
+	return () => {
+		console.log("Hello World!");
+	};
+};
+
+console.log(parent()());
