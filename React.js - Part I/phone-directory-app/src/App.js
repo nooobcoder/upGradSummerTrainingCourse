@@ -6,11 +6,12 @@ function App() {
 	return (
 		<Fragment>
 			<Header />
-			<button>Add</button>
-			<div>
-				<span>Name</span>
-				<br />
-				<span>Phone</span>
+			<div className="container">
+				<button>Add</button>
+				<div>
+					<span>Name</span>
+					<span>Phone</span>
+				</div>
 			</div>
 		</Fragment>
 	);

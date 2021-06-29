@@ -1,0 +1,21 @@
+button {
+	color: #ffff;
+	background-color: #7ab97a;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	margin-bottom: 30px;
+}
+span {
+	padding-right: 25%;
+	font-size: 20px;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bolder;
+	text-transform: uppercase;
+	color: gray;
+}
+
+.container {
+	margin-left: 20px;
+	margin-top: 18px;
+}
