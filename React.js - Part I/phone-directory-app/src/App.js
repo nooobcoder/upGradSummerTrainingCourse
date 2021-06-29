@@ -1,24 +1,17 @@
 import "./App.css";
 import React, { Fragment } from "react";
+import Header from "./Header.jsx";
 
 function App() {
 	return (
 		<Fragment>
-			{/* <div className="App">Phone Directory</div>
+			<Header />
 			<button>Add</button>
 			<div>
 				<span>Name</span>
 				<br />
 				<span>Phone</span>
-			</div> */}
-
-			<label htmlFor="name">Name</label>
-			<input
-				id="name"
-				type="text"
-				placeholder={"Type Here"}
-				defaultValue="Ankur Paul"
-			/>
+			</div>
 		</Fragment>
 	);
 }
