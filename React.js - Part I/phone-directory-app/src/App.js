@@ -8,9 +8,11 @@ function App() {
 		{ id: 2, name: "Joseph Pristine", phone: "7777777777" },
 	];
 
+	const deleteHandler = (id) => document.getElementById(id).remove();
+
 	return (
 		<Fragment>
-			<Header />
+			<Header heading={"Phone Directory"} />
 			<div className="container">
 				<button>Add</button>
 				<div className="grid-container heading-container">
@@ -22,10 +24,15 @@ function App() {
 					</span>
 				</div>
 				{contacts.map(({ id, name, phone }) => (
-					<div key={id} className="grid-container">
+					<div key={id} id={id} className="grid-container">
 						<span className="grid-item">{name}</span>
 						<span className="grid-item">{phone}</span>
-						<button className="delete-contact">Delete</button>
+						<button
+							className="delete-contact"
+							onClick={(e) => deleteHandler(id)}
+						>
+							Delete
+						</button>
 					</div>
 				))}
 			</div>
