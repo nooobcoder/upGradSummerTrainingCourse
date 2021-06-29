@@ -1,21 +1,46 @@
+.container {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 18px;
+}
+
 button {
 	color: #ffff;
 	background-color: #7ab97a;
 	font-size: 18px;
 	text-transform: uppercase;
 	padding: 10px 20px;
-	margin-bottom: 30px;
-}
-span {
-	padding-right: 25%;
-	font-size: 20px;
-	font-family: "Times New Roman", Times, serif;
-	font-weight: bolder;
-	text-transform: uppercase;
-	color: gray;
+	margin-bottom: 20px;
+	border: 0px;
+	cursor: pointer;
 }
 
-.container {
-	margin-left: 20px;
-	margin-top: 18px;
+.grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	font-size: 1.15rem;
+	word-wrap: break-word;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: 40% 30% auto;
+	margin-bottom: 10px;
+}
+
+.heading-container {
+	margin: 30px 0 20px 0;
+	width: 100%;
+}
+
+.name-heading,
+.phone-heading {
+	font-size: 1rem;
+	font-weight: bolder;
+	color: #808080;
+	text-transform: uppercase;
+}
+
+.delete-contact {
+	background: #fa9c9c;
+	color: #000;
+	width: auto;
 }
