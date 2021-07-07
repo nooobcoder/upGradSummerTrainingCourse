@@ -1,8 +1,15 @@
 import React from "react";
+
+// User defined imports
 import "../styles/Home.css";
+import Header from "./Header";
 
 const Home = () => {
-	return <div>Homepage</div>;
+	return (
+		<div>
+			<Header />
+		</div>
+	);
 };
 
 export default Home;
