@@ -1,0 +1,39 @@
+{
+	"name": "clean-react-app",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@material-ui/core": "^4.12.0",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-modal": "^3.14.3",
+		"react-scripts": "4.0.3",
+		"web-vitals": "^2.0.1"
+	},
+	"devDependencies": {
+		"@testing-library/jest-dom": "^5.11.4",
+		"@testing-library/react": "^12.0.0",
+		"@testing-library/user-event": "^13.1.9"
+	},
+	"scripts": {
+		"dev": "react-scripts start",
+		"build": "react-scripts build"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
+}
